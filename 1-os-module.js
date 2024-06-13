@@ -2,7 +2,7 @@
 const os = require('os');
 
 // Return nombre del dispositivo
-console.log("Nombre del dispositivo: ",os.type());
+console.log("Nombre del dispositivo: ",os.hostname());
 
 // Return versión del sistema operativo
 console.log("Versión del sistema operativo: ",os.version());
