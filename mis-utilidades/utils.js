@@ -12,4 +12,15 @@ function getRandomElementFromArray(arr) {
     return arr[randomIndex];
 }
 
+function getAvgFromArray(arr) {
+    let sum = 0;
+    for (let i = 0; i < arr.length; i++) {
+        sum += arr[i];
+    }
+    let result = sum / arr.length;
+    return result;
+}
+
+// He creado una propiedad que se llama getRandomElementFromArray y esta propiedad toma por valor una referencia a la función getRandomElementFromArray
 module.exports.getRandomElementFromArray = getRandomElementFromArray;
+module.exports.getAvgFromArray = getAvgFromArray;
